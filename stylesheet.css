@@ -1,0 +1,40 @@
+body{
+    font-family: Quicksand;
+    font-size: medium;
+    font-weight: 400;
+}
+
+h1, h2{
+    color: #883B49;
+}
+
+header{
+    display: flex;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 80px;
+    color: #883B49;
+}
+
+.header-info{
+    flex-direction: column;
+}
+
+hr{
+    color:#883B49;
+}
+
+main{
+    width: 800px;
+    margin: auto;
+    border: solid 2px black;
+    padding: 30px;
+}
+
+img{
+    height:200px;
+}
+
+
