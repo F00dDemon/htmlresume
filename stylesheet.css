@@ -161,8 +161,32 @@ p{
         flex-direction: column;
     }
     header h1 {
-    font-weight: 700;
-    font-size: 40px;
-    color: #883B49;
+        font-weight: 700;
+        font-size: 40px;
+        color: #883B49;
     }
+    div{
+        width: 100%;
+    }
+    main{
+        padding: 0%;
+    }
+    img{
+        width: 75%;
+        align-self: center;
+    }
+    #education{
+        display: flex !important;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+    }
+    #skills li{
+        width: 100%;
+    }
+    #experience{
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+    }
+    
 }
