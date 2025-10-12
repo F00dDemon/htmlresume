@@ -9,6 +9,10 @@ h1, h2{
     color: #883B49;
 }
 
+h2{
+    margin: 0px;
+}
+
 header{
     display: flex;
     color: #883B49;
@@ -39,6 +43,10 @@ a:hover{
     background-color: #883B49;
 }
 
+#summary{
+    margin: 10px 0px;
+}
+
 hr{
     color:#883B49;
 }
@@ -59,4 +67,102 @@ img{
 
 p{
     margin: 0px;
+}
+
+#education{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto auto;
+    height:400px;
+    gap: 0px 0px;
+}
+
+#education *{
+    margin: 0px;
+}
+
+#bach-title{
+    grid-column: 1/3;
+    grid-row: 1/6;
+}
+
+#bach-loc{
+    grid-column: 5/13;
+    grid-row: 1/2;
+}
+
+#bach-list{
+    grid-column: 5/13;
+    grid-row: 2/3;
+}
+
+#assoc-title{
+    grid-column: 1/3;
+    grid-row: 5/13;
+}
+
+#assoc-loc{
+    grid-column: 5/13;
+    grid-row: 5/6;
+}
+
+#assoc-list{
+    grid-column: 5/13;
+    grid-row: 6/7;
+}
+
+.loc{
+    height:48px
+}
+
+#skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#skills li{
+    width: 50%;
+}
+
+#experience{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto auto;
+    height:400px;
+    gap: 0px 0px;
+}
+
+#ra-title{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin-bottom: 0px;
+}
+
+#ra-loc{
+    grid-column: 1/4;
+    grid-row: 2/13;
+}
+
+#ra-list{
+    grid-column: 4/13;
+    grid-row: 1/13;
+}
+
+@media all and (max-width: 600px) {
+    *{
+        flex-wrap: wrap;
+    }
+    main{
+        width: 100%;
+    }
+    header{
+        flex-direction: column;
+    }
+    header h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #883B49;
+    }
 }
