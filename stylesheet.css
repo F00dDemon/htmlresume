@@ -130,7 +130,7 @@ p{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto auto auto auto;
-    height:400px;
+    height:200px;
     gap: 0px 0px;
 }
 
