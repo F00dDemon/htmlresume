@@ -291,3 +291,7 @@ textarea {
     padding: .5rem .75rem;
     text-decoration: none;
 }
+#contact-doc a, footer{
+    text-align: center;
+    font-weight: 600;
+}
