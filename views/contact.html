@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" id="contact-doc">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Orion</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/stylesheet.css">
+        <!-- Favicon -->
+        <link rel="icon" href="images/contact_icon.png">
+        <!-- Quicksand Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <main id="contact-main">
+            <h1>Contact Me</h1>
+
+            <div id="contact-form">
+                <div id="firstname">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname">
+                </div>
+                <div id="lastname">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname">
+                </div>
+                <div id="jobtitle">
+                    <label for="jobname">Job Title</label>
+                    <input type="text" name="jobname" id="jobname">
+                </div>
+                <div id="company">
+                    <label for="companyinput">Company</label>
+                    <input type="text" name="companyinput" id="companyinput">
+                </div>
+                <div id="linkedin">
+                    <label for="linkedinput">LinkedIn</label>
+                    <input type="text" name="linkedinput" id="linkedinput">
+                </div>
+                <div id="email">
+                    <label for="emailinput">Email</label>
+                    <input type="text" name="emailinput" id="emailinput">
+                </div>
+                <div id="howmeet">
+                    <label>How did we meet?</label>
+                    <select id="size" name="howmeetinput">
+                        <option value="none">Please select</option>
+                        <option value="mutual">Mutual</option>
+                        <option value="conference">Conference</option>
+                        <option value="online">Online</option>
+                    </select>
+                </div>
+                <div id="other">
+                    <label for="otherinput">Other (please specify)</label>
+                    <input type="text" name="otherinput" id="otherinput">
+                </div>
+            </div>
+                <div id="message">
+                    <label id="messageinput">Message</label>
+                    <textarea>
+                    </textarea>
+                </div>
+                <label for="mailing">
+                    <input type="checkbox" id="mailing" name="maillist" value="mailing"> Please add me to your mailing list
+                </label>
+                <br>
+                Choose an email format:
+                <label for="html">
+                    <input type="radio" id="html" name="method" value="html">HTML
+                </label>
+                <label for="text">
+                    <input type="radio" id="text" name="method" value="text">Text
+                </label>
+                <br>
+                <button type="submit" id="contact-submit">Submit</button>
+    
+        </main>
+    </body>
+</html>
