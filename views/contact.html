@@ -13,47 +13,66 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-        
+        <!-- Link to JavaScript -->
+        <script src="scripts/javascript.js" defer></script>
+
     </head>
     <body>
         <main id="contact-main">
+            
             <h1>Contact Me</h1>
-
-            <div id="contact-form">
+            <form  action="#" method="get" id="contact-form">
+            <div id="form-grid">
                 <div id="firstname">
+                    <span id="err-fname" class="error">First name cannot be empty!</span>
+                    <br>
                     <label for="fname">First Name</label>
                     <input type="text" name="fname" id="fname">
                 </div>
                 <div id="lastname">
+                    <span id="err-lname" class="error">Last name cannot be empty!</span>
+                    <br>
                     <label for="lname">Last Name</label>
                     <input type="text" name="lname" id="lname">
                 </div>
                 <div id="jobtitle">
+                    <span class="error"></span>
+                    <br>
                     <label for="jobname">Job Title</label>
                     <input type="text" name="jobname" id="jobname">
                 </div>
                 <div id="company">
+                    <span class="error"></span>
+                    <br>
                     <label for="companyinput">Company</label>
                     <input type="text" name="companyinput" id="companyinput">
                 </div>
                 <div id="linkedin">
+                    <span id="err-linked" class="error">Please enter a valid LinkedIn URL!</span>
+                    <br>
                     <label for="linkedinput">LinkedIn</label>
                     <input type="text" name="linkedinput" id="linkedinput">
                 </div>
                 <div id="email">
+                    <span id="err-email" class="error">Email must be formatted correctly!</span>
+                    <br>
                     <label for="emailinput">Email</label>
                     <input type="text" name="emailinput" id="emailinput">
                 </div>
                 <div id="howmeet">
+                    <span id="err-meet" class="error">Please select an option!</span>
+                    <br>
                     <label>How did we meet?</label>
-                    <select id="size" name="howmeetinput">
+                    <select id="meetselect" name="howmeetinput">
                         <option value="none">Please select</option>
-                        <option value="mutual">Mutual</option>
                         <option value="conference">Conference</option>
                         <option value="online">Online</option>
+                        <option value="other">Other</option>
                     </select>
                 </div>
                 <div id="other">
+                    <span class="error"></span>
+                    <br>
                     <label for="otherinput">Other (please specify)</label>
                     <input type="text" name="otherinput" id="otherinput">
                 </div>
@@ -63,9 +82,10 @@
                     <textarea>
                     </textarea>
                 </div>
-                <label for="mailing">
-                    <input type="checkbox" id="mailing" name="maillist" value="mailing"> Please add me to your mailing list
-                </label>
+                <span id="err-mailing" class="error">Please input an email!</span>
+                <br>
+                <label for="mailing"> </label>
+                <input type="checkbox" id="mailing" name="maillist" value="bruh"> Please add me to your mailing list
                 <br>
                 Choose an email format:
                 <label for="html">
@@ -76,7 +96,7 @@
                 </label>
                 <br>
                 <button type="submit" id="contact-submit">Submit</button>
-    
+            </form>
         </main>
         <footer>
             <a href="https://github.com/F00dDemon/htmlresume">GitHub</a>
