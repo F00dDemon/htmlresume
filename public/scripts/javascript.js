@@ -45,17 +45,8 @@ document.getElementById('contact-main').onsubmit = () => {
     return isValid;
 }
 
-let emailToggle = document.getElementById('email');
 let otherToggle = document.getElementById('other');
 
-document.getElementById('mailing').addEventListener('change', function () {
-    let selection = this.checked;
-    if(selection){
-        emailToggle.style.display = "initial";
-    }else{
-        emailToggle.style.display = "none";
-    }
-});
 document.getElementById('meetselect').addEventListener('change', function () {
     let selection = this.value;
     if(selection === "other"){

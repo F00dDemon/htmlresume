@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" id="contact-doc">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin</title>
+
+        <!-- JS -->
+
+        <script src="scripts/javascript.js" defer></script>
+        <script src="//code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="//cdn.datatables.net/2.3.4/js/dataTables.min.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/stylesheet.css">
+
+        <!-- Quicksand Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <h1>Admin Page</h1>
+        <table id="contact-table" class="display">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Jobname</th>
+                    <th>Company</th>
+                    <th>LinkedIn</th>
+                    <th>Email</th>
+                    <th>Howmeet</th>
+                    <th>Other</th>
+                    <th>Date/Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% contacts.forEach(contact => { %>
+
+                <tr>
+                    <td><%= contact.fname %> <%= contact.lname %></td>
+                    <td><%= contact.jobname %></td>
+                    <td><%= contact.companyinput %></td>
+                    <td><%= contact.linkedinput %></td>
+                    <td><%= contact.emailinput %></td>
+                    <td><%= contact.howmeetinput %></td>
+                    <td><%= contact.other %></td>
+                    <td><%= contact.timestamp %></td>
+                </tr>
+
+                <% }); %>
+
+            </tbody>
+        </table>
+        <a href="/contact-me"> (temporary) Quick Swap to contact form</a>
+        </main>
+    </body>
+    <script defer>
+        let table = new DataTable('#contact-table');
+    </script>
+</html>

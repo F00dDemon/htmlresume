@@ -21,18 +21,18 @@
         <main id="contact-main">
             
             <h1>Contact Me</h1>
-            <form  action="#" method="get" id="contact-form">
+            <form  action="submit-contact" method="post" id="contact-form">
             <div id="form-grid">
                 <div id="firstname">
                     <span id="err-fname" class="error">First name cannot be empty!</span>
                     <br>
-                    <label for="fname">First Name</label>
+                    <label for="fname">First Name*</label>
                     <input type="text" name="fname" id="fname">
                 </div>
                 <div id="lastname">
                     <span id="err-lname" class="error">Last name cannot be empty!</span>
                     <br>
-                    <label for="lname">Last Name</label>
+                    <label for="lname">Last Name*</label>
                     <input type="text" name="lname" id="lname">
                 </div>
                 <div id="jobtitle">
@@ -62,7 +62,7 @@
                 <div id="howmeet">
                     <span id="err-meet" class="error">Please select an option!</span>
                     <br>
-                    <label>How did we meet?</label>
+                    <label>How did we meet?*</label>
                     <select id="meetselect" name="howmeetinput">
                         <option value="none">Please select</option>
                         <option value="conference">Conference</option>
@@ -100,6 +100,8 @@
         </main>
         <footer>
             <a href="https://github.com/F00dDemon/htmlresume">GitHub</a>
+            <br>
+            <a href="/admin"> (temporary) Quick Swap to admin</a>
         </footer>
     </body>
 </html>
