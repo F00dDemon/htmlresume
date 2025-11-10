@@ -19,7 +19,7 @@ document.getElementById('contact-main').onsubmit = () => {
         document.getElementById("err-lname").style.display = "inline";
         isValid = false;
     }
-    if (linkedinput && linkedinput.indexOf("https://linkedin.com/in/") === -1) {
+    if (linkedinput && linkedinput.indexOf("https://linkedin.com/") === -1) {
         document.getElementById("err-linked").style.display = "inline";
         isValid = false;
     }

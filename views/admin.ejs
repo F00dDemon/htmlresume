@@ -20,8 +20,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <%- include('partials/header') %>
         <main>
             <h1>Admin Page</h1>
+            <% if (contacts.length !== 0) {%>
         <table id="contact-table" class="display">
             <thead>
                 <tr>
@@ -53,7 +55,9 @@
 
             </tbody>
         </table>
-        <a href="/contact-me"> (temporary) Quick Swap to contact form</a>
+        <%} else { %>
+            <p>aint nothing here yet.</p>
+        <% } %>
         </main>
     </body>
     <script defer>

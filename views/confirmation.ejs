@@ -15,10 +15,31 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <%- include('partials/header') %>
         <main id="contact-main">
             <h1>Thank you!</h1>
 
             <h2>I will get back to you soon!</h2>
+            <p>Name: <%= contact.fname %> <%= contact.lname %></p>
+            <% if (contact.jobname) {%>
+                <p>Job Title: <%= contact.jobname %></p>
+            <% } %>
+            <% if (contact.companyinput) {%>
+                <p>Company: <%= contact.companyinput %></p>
+            <% } %>
+            <% if (contact.linkedinput) {%>
+                <p><a href="<%=contact.linkedinput%>">LinkedIn</a></p>
+            <% } %>
+            <% if (contact.emailinput) {%>
+                <p>Email: <%= contact.emailinput %></p>
+            <% } %>
+            <% if (contact.howmeetinput) {%>
+                <p>How we met: <%= contact.howmeetinput %></p>
+            <% } %>
+            <% if (contact.otherinput) {%>
+                <p>Other: <%= contact.howmeetinput %></p>
+            <% } %>
+
             <form action="/contact-me">
             <button type="submit" id="contact-submit">Go Back</button>
             </form>
