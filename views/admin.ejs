@@ -41,14 +41,14 @@
                 <% contacts.forEach(contact => { %>
 
                 <tr>
-                    <td><%= contact.fname %> <%= contact.lname %></td>
-                    <td><%= contact.jobname %></td>
-                    <td><%= contact.companyinput %></td>
-                    <td><%= contact.linkedinput %></td>
-                    <td><%= contact.emailinput %></td>
-                    <td><%= contact.howmeetinput %></td>
+                    <td><%= contact.first_name %> <%= contact.last_name %></td>
+                    <td><%= contact.job %></td>
+                    <td><%= contact.company %></td>
+                    <td><%= contact.linkedin %></td>
+                    <td><%= contact.email %></td>
+                    <td><%= contact.how_we_met %></td>
                     <td><%= contact.other %></td>
-                    <td><%= contact.timestamp %></td>
+                    <td><%= contact.date_added %></td>
                 </tr>
 
                 <% }); %>
